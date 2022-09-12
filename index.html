@@ -1,89 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="index.css">
 
   <title>Epic Gamer Moment</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
-<body>
-  <ul class="nav nav-pills navigation">
-    <li class="nav-item">
-      <a class="nav-link hyperlink-color" href="#">
-        <img src="./images/logo.svg" alt="logo">
-      </a>
-    </li>
 
-    <li class="nav-item dropdown">
-      <a
-        class="nav-link dropdown-toggle hyperlink-color" 
-        data-bs-toggle="dropdown" 
-        href="#" 
-        role="button"
-        aria-expanded="false"
-      >
-        Features
-      </a>
-      <ul class="dropdown-menu dropdown-features dropdown-border">
-        <li><a class="dropdown-item" href="#">
-          <div class="dropdown-horizontalifier">
-            <img class="dropdown-image" src="./images/icon-todo.svg" alt="Todo">
-            <p class="dropdown-textbox">Todo List</p>
-          </div>
-        </a></li>
-        <li><a class="dropdown-item" href="#">
-          <div class="dropdown-horizontalifier">
-            <img class="dropdown-image" src="./images/icon-calendar.svg" alt="Todo">
-            <p class="dropdown-textbox">Calendar</p>
-          </div>
-        </a></li>
-        <li><a class="dropdown-item" href="#">
-          <div class="dropdown-horizontalifier">
-            <img class="dropdown-image" src="./images/icon-reminders.svg" alt="Todo">
-            <p class="dropdown-textbox">Reminders</p>
-          </div>
-        </a></li>
-        <li><a class="dropdown-item" href="#">
-          <div class="dropdown-horizontalifier">
-            <img class="dropdown-image" src="./images/icon-planning.svg" alt="Todo">
-            <p class="dropdown-textbox">Planning</p>
-          </div>
-        </a></li>
-      </ul>
-    </li>
-    <li class="nav-item dropdown">
-      <a
-        class="nav-link dropdown-toggle hyperlink-color" 
-        data-bs-toggle="dropdown" 
-        href="#" 
-        role="button"
-        aria-expanded="false"
-      >
-        Company
-      </a>
-      <ul class="dropdown-menu dropdown-company dropdown-border">
-        <li><a class="dropdown-item" href="#">History</a></li>
-        <li><a class="dropdown-item" href="#">Our Team</a></li>
-        <li><a class="dropdown-item" href="#">Blog</a></li>
-      </ul>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link hyperlink-color" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link hyperlink-color" href="#">About</a>
-    </li>
-  </ul>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./images/logo.svg" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle hyperlink-color" data-bs-toggle="dropdown" href="#" role="button"
+              aria-expanded="false">
+              Features
+            </a>
+            <ul class="dropdown-menu dropdown-features dropdown-border">
+              <li><a class="dropdown-item" href="#">
+                  <div class="dropdown-horizontalifier">
+                    <img class="dropdown-image" src="./images/icon-todo.svg" alt="Todo">
+                    <p class="dropdown-textbox">Todo List</p>
+                  </div>
+                </a></li>
+              <li><a class="dropdown-item" href="#">
+                  <div class="dropdown-horizontalifier">
+                    <img class="dropdown-image" src="./images/icon-calendar.svg" alt="Todo">
+                    <p class="dropdown-textbox">Calendar</p>
+                  </div>
+                </a></li>
+              <li><a class="dropdown-item" href="#">
+                  <div class="dropdown-horizontalifier">
+                    <img class="dropdown-image" src="./images/icon-reminders.svg" alt="Todo">
+                    <p class="dropdown-textbox">Reminders</p>
+                  </div>
+                </a></li>
+              <li><a class="dropdown-item" href="#">
+                  <div class="dropdown-horizontalifier">
+                    <img class="dropdown-image" src="./images/icon-planning.svg" alt="Todo">
+                    <p class="dropdown-textbox">Planning</p>
+                  </div>
+                </a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle hyperlink-color" data-bs-toggle="dropdown" href="#" role="button"
+              aria-expanded="false">
+              Company
+            </a>
+            <ul class="dropdown-menu dropdown-company dropdown-border">
+              <li><a class="dropdown-item" href="#">History</a></li>
+              <li><a class="dropdown-item" href="#">Our Team</a></li>
+              <li><a class="dropdown-item" href="#">Blog</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hyperlink-color" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hyperlink-color" href="#">About</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav login-parent">
+          <li class="nav-item login">
+            <a class="nav-link hyperlink-color" href="#" style="">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hyperlink-color" href="#">
+              <div class="btn btn-outline-dark">Register</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Actual website -->
 </body>
 </html>
