@@ -11,7 +11,9 @@
 
 body {
     background-color: var(--almostwhite);
-    overflow: hidden;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
 }
 
 p {
@@ -90,16 +92,16 @@ a {
     align-self: center;
 }
 
-/* =========================================== */
-
+/* ====== LARGE SCREEN ====== */
 .main-div {
     height: 100%;
-    width: 100%;
+    width: min(100%, 1200px);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 50px 120px 120px 120px;
     align-items: center;
+    align-self: center;
 }
 
 .left-div {
@@ -143,4 +145,58 @@ a {
 .client-logo {
     height: 100%;
     width: auto;
+    margin-right: 15px;
+}
+
+/* ====== MODIFIERS ====== */
+.small-screen {
+    display: none;
+}
+
+.large-screen {
+    display: flex;
+}
+
+/* ====== SMALL SCREEN ====== */
+.top-image {
+    width: 100%;
+    height: auto;
+}
+
+.bottom-div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 650px) {
+    .small-screen {
+        display: flex;
+    }
+    
+    .large-screen {
+        display: none;
+    }
+
+    .main-div {
+        flex-direction: column;
+    }
+
+    .title {
+        margin-bottom: 5px;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    .subtitle {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .client-logo {
+        width: 20%;
+    }
 }
