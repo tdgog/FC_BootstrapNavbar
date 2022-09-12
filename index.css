@@ -34,9 +34,15 @@ a {
 }
 
 .navigation {
-    height: 80px;
-    display: flex;
-    align-items: center;
+    padding: 10px;
+}
+
+.brand {
+    padding-right: 40px;
+}
+
+.nav-item-margin-right {
+    margin-right: 20px;
 }
 
 .dropdown-border {
