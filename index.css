@@ -148,7 +148,7 @@ a {
     margin-right: 15px;
 }
 
-/* ====== MODIFIERS ====== */
+/* Modify visibility */
 .small-screen {
     display: none;
 }
@@ -157,7 +157,7 @@ a {
     display: flex;
 }
 
-/* ====== SMALL SCREEN ====== */
+/* Small screen css */
 .top-image {
     width: 100%;
     height: auto;
